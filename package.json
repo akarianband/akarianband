@@ -1,6 +1,29 @@
 {
 	"name": "akarianband",
+	"title": "Akarian",
+	"description": "More than a band, a creative movement you can be part of.",
+	"year": "2025",
+	"keywords": [
+		"akarianband",
+		"akarian band",
+		"akarian",
+		"music band",
+		"band",
+		"music",
+		"creative movement",
+		"NizarSyahmi37"
+	],
+	"repository": "https://github.com/nizarsyahmi37/akarianband",
+	"license": "UNLICENSED",
 	"version": "1.0.0",
+	"support": [
+		{
+			"name": "Nizar Syahmi bin Nazlan",
+			"email": "support@nizarsyahmi37.com",
+			"url": "https://nizarsyahmi37.com/"
+		}
+	],
+	"main": "index.tsx",
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbopack",
@@ -9,19 +32,24 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"lucide-react": "^0.487.0",
+		"next": "15.2.5",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
-		"next": "15.1.7"
+		"tailwind-merge": "^3.2.0",
+		"tw-animate-css": "^1.2.5"
 	},
 	"devDependencies": {
-		"typescript": "^5",
+		"@eslint/eslintrc": "^3",
+		"@tailwindcss/postcss": "^4",
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
-		"postcss": "^8",
-		"tailwindcss": "^3.4.1",
 		"eslint": "^9",
-		"eslint-config-next": "15.1.7",
-		"@eslint/eslintrc": "^3"
+		"eslint-config-next": "15.2.5",
+		"tailwindcss": "^4",
+		"typescript": "^5"
 	}
 }
