@@ -3,7 +3,7 @@ import { ReactNode } from "react"
 
 import Layout from "@/components/modules/general/layout"
 
-import "./globals.css"
+import "../globals.css"
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://akarian.band"),
@@ -72,7 +72,7 @@ export default function RootLayout({
 	children: ReactNode
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<head />
 			<Layout>
 				{children}

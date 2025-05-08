@@ -3,6 +3,7 @@ import { blackchancery, tisk } from "@/lib/fonts"
 
 import Header from "./header"
 import Footer from "./footer"
+import { ThemeProvider } from "./theme"
 
 export default function Layout({
 	children,
@@ -13,11 +14,17 @@ export default function Layout({
 		<body
 			className={`${tisk.variable} ${blackchancery.variable} antialiased`}
 		>
-			<Header />
-			<main>
-				{children}
-			</main>
-			<Footer />
+			<ThemeProvider
+				attribute="class"
+				defaultTheme="dark"
+				disableTransitionOnChange
+			>
+				<Header />
+				<main>
+					{children}
+				</main>
+				<Footer />
+			</ThemeProvider>
 		</body>
 	)
 }
